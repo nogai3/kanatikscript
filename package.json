@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "globalthis": "^1.0.4",
+    "node-fetch": "^3.3.2",
+    "polyfill": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "esbuild": "^0.25.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build:dict": "npx ts-node src/dict/parraybbuild.ts",
+    "build:bundle": "node build.js",
+    "build": "npm run build:dict && npm run build:bundle"
+  }
+}
